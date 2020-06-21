@@ -1,0 +1,205 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/* Iconos sacados de Iconmoon.io */
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?7klwvk');
+  src:  url('../fonts/icomoon.eot?7klwvk#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?7klwvk') format('truetype'),
+    url('../fonts/icomoon.woff?7klwvk') format('woff'),
+    url('../fonts/icomoon.svg?7klwvk#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-heart:before {
+  content: "\e901";
+}
+.icon-home:before {
+  content: "\e902";
+}
+.icon-triangle-up:before {
+  content: "\e903";
+}
+.icon-triangle-right:before {
+  content: "\e904";
+}
+.icon-triangle-left:before {
+  content: "\e905";
+}
+.icon-triangle-down:before {
+  content: "\e906";
+}
+.icon-whatshot:before {
+  content: "\e900";
+}
+.icon-cog:before {
+  content: "\e907";
+}
+.icon-gear:before {
+  content: "\e907";
+}
+.icon-preferences:before {
+  content: "\e907";
+}
+.icon-settings:before {
+  content: "\e907";
+}
+.icon-generate:before {
+  content: "\e907";
+}
+.icon-control:before {
+  content: "\e907";
+}
+.icon-options:before {
+  content: "\e907";
+}
+
+
+
+/* Contenedor principal */
+.main_container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: 100px 1fr;
+}
+
+
+
+/* Todo el browser */
+.browser {
+  grid-column: 1 / 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 .2em 10px rgba(0,0,0,.2);
+}
+.brand_image_browser img {
+  padding: 0px 25px;
+  height: 60px;
+}
+.form_browser input[type=text] {
+  width: 500px;
+  height: 20px;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 7px;
+  outline: none;
+}
+.form_browser input[type=text]:focus {
+  border: 1px solid red;
+}
+.sesion_browser {
+  display: flex;
+  align-items: center;
+  padding: 0px 25px;
+  font-weight: bold;
+}
+.sesion_browser img{
+  border-radius: 50px;
+  height: 50px;
+  margin: 0px 10px;
+}
+.sesion_browser a{
+  font-size: 1.5rem;
+}
+
+
+
+/* Todo el Menu de navegacion */
+.navigation_menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: #ff5d60;
+}
+.navigation_menu a {
+  color: white;
+}
+.navigation_menu ul a li {
+  font-size: 1rem;
+  margin: 40px 0px;
+}
+.navigation_menu ul a:hover{
+  color: #ff9395;
+}
+.navigation_menu ul a li span {
+  font-size: 2rem;
+}
+.navigation_menu ul a li p{
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+
+
+/* Todo el contenido de peliculas */
+.movies_category_container {
+  margin: 30px;
+  overflow: auto;
+}
+.movies_category {
+  height: 250px;
+  margin-bottom: 30px;
+}
+.movies_category:last-child {
+  margin-bottom: 0px;
+}
+.movies_container {
+  height: 220px;
+  display: flex;
+  overflow: auto;
+  padding-top: 10px;
+}
+.movie_container {
+  height: 200px;
+  position: relative;
+  margin-right: 40px;
+}
+.movie_container:last-child {
+  margin-right: 0px;
+}
+.movie_container img {
+  height: 100%;
+}
+.movie_info {
+  position: absolute;
+  padding: 10px;
+  background: rgba(255,93,96,.7);
+  color: white;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 40%;
+}
+.movie_info p {
+  margin-top: 10px;
+  font-size: .9em;
+}
